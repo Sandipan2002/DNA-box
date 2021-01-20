@@ -1,0 +1,39 @@
+**dnabox consisted of one class called NA
+
+Help on class NA in module dnabox:
+
+class NA(builtins.object)
+ |  NA(seq, orient=1)
+ |  
+ |  Methods defined here:
+ |  
+ |  __init__(self, seq, orient=1)
+ |      seq=>sequence of neucleotides. orient=> 0 or 1(default)[0: (3'-5'), 1: (5'-3')
+ |  
+ |  complementStrandSyn(self, strand, res='DNA')
+ |      res can be DNA(default) or RNA, returns Complementary Strand
+ |  
+ |  getStrand(self, orient)
+ |      orient = 1 or 0, int. returns the strand of certain orient.
+ |  
+ |  get_self_transcrypted(self, ori=1)
+ |      takes ori and returns transcrypted copy.
+ |  
+ |  get_self_translated(self, ori=1)
+ |      Takes ori. Returns the translated copy of the ori.
+ |  
+ |  reference_create(self)
+ |      internal function to universalize
+ |  
+ |  transcrypt(self, seq)
+ |  
+ |  translate(self, seq)
+ |      takes a sequence as arg and returns translated hnRNA
+ |  
+ |  type_NA(self, seq)
+ |      detects the type of NA. returns DNA or RNA.
+ |  
+ |  ----------------------------------------------------------------------
+ IMPORT
+ | from dnabox import NA
+ |  ----------------------------------------------------------------------
